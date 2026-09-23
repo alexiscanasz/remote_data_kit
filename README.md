@@ -4,9 +4,6 @@ Cliente HTTP reutilizable sobre [Dio](https://pub.dev/packages/dio), con manejo
 de resultados tipo `Result<T>` (`Success` / `Failure`), clasificación simple de
 errores y adaptadores para castear respuestas JSON de forma segura.
 
-No conoce ningún dominio específico: tú le dices, mediante un `mapper`, cómo
-convertir el JSON crudo en tus propios modelos.
-
 ## Instalación
 
 ```yaml
@@ -16,7 +13,7 @@ dependencies:
       url: https://github.com/alexiscanasz/remote_data_kit
 ```
 
-## Uso básico
+## Uso basico
 
 ```dart
 import 'package:dio/dio.dart';
@@ -49,7 +46,7 @@ switch (result) {
 
 ## Adaptadores JSON
 
-`asJsonMap` y `asJsonList` castean la respuesta cruda a `Map<String, dynamic>`
+`asJsonMap` y `asJsonList` castean la respuesta a `Map<String, dynamic>`
 o `List<Map<String, dynamic>>`, lanzando un `FormatException` con mensaje claro
 si la forma del dato no coincide.
 
@@ -65,4 +62,9 @@ flutter run
 
 ## Demostración
 
-Video mostrando el `example` en funcionamiento: 
+Video mostrando el `example` en funcionamiento:
+
+https://github.com/user-attachments/assets/60f78bfd-119b-4338-ae74-b6d917c35290
+
+
+
